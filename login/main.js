@@ -1,3 +1,5 @@
+// Simple log in using Alerts
+
 let userName = prompt('Who\'s there?', '')
 let password = "TheMaster"
 
