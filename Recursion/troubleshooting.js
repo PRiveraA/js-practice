@@ -1,4 +1,4 @@
-// Function that uses recursion to find whether number is even or odd
+// Function that uses recursion to find whether a number is even or odd
 
 const isEven = (n) => {
   if (n > 1) {
