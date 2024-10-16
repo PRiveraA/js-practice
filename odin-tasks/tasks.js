@@ -10,3 +10,8 @@ capitalize = (s) => {
   let sCapped = s.charAt(0).toUpperCase() + s.slice(1)
   return sCapped
 }
+
+lastLetter = (s) => {
+  length = s.length
+  return s.charAt(length - 1)
+}
