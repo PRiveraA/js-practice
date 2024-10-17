@@ -26,9 +26,6 @@ const main = () => {
     return choice
   }
 
-  let humanScore = 0
-  let computerScore = 0
-
   const playRound = (playerChoice, computerChoice) => {
 
     let results = playerChoice + " vs " + computerChoice
@@ -62,6 +59,9 @@ const main = () => {
         alert("tie!")
     }
   }
+
+  let humanScore = 0
+  let computerScore = 0
 
   while (humanScore < 5 && computerScore < 5) {
     playRound(playerChoice(), computerChoice())
