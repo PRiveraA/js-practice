@@ -1,4 +1,6 @@
+// Defines main program
 const main = () => {
+
   // Defines computer choice
   const computerChoice = () => {
     const randomValue = Math.round(Math.random() * 9)
@@ -15,6 +17,7 @@ const main = () => {
 
     return choice
   }
+
   // Defines player choice
   const playerChoice = () => {
     let choice = prompt("Enter Choice").toLocaleLowerCase().trim()
@@ -26,6 +29,7 @@ const main = () => {
     return choice
   }
 
+  // Determines winner of round
   const playRound = (playerChoice, computerChoice) => {
 
     let results = playerChoice + " vs " + computerChoice
@@ -60,13 +64,16 @@ const main = () => {
     }
   }
 
+  // Keeps track of score
   let humanScore = 0
   let computerScore = 0
 
+  //Runs game until either player reach 5 points 
   while (humanScore < 5 && computerScore < 5) {
     playRound(playerChoice(), computerChoice())
   }
 
+  // Determines winner of game
   if (humanScore > computerScore) {
     alert(`You Win!`)
   } else {
@@ -74,4 +81,6 @@ const main = () => {
   }
 
 }
+
+// Runs main program
 main()
