@@ -16,9 +16,19 @@ const main = () => {
     return choice
   }
 
+  const playerChoice = () => {
+    let choice = prompt("Enter Choice").toLocaleLowerCase().trim()
+
+    while (!(choice === "rock" || choice === "paper" || (choice === "scissors" || choice === "scissor"))) {
+      choice = prompt("Invalid choice, try again").toLocaleLowerCase().trim()
+    }
+
+    return choice
+  }
 
 
-  computerChoice();
+  computerChoice()
+  playerChoice()
 
 }
 
